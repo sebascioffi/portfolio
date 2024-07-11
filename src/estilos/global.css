@@ -1,0 +1,761 @@
+body{
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.navphone{
+    background-color: #111418;
+    display: flex;
+    flex-direction: row;
+    height: 66px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navphone .nombre h2{
+    color: rgba(255, 255, 255, 0.966);
+    height: 66px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.nombre{
+    padding-left: 16px;
+}
+
+.navsecredes{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+    padding-right: 16px;
+}
+
+.barraphone{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Estilo para rotar la cruz */
+.menu-icon.open {
+    transform: rotate(90deg);
+}
+
+.seccionesphone{
+    background-color: #000000ef;
+    top: 66px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.phonesec{
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 16px;
+    border-bottom: 2px solid rgba(110, 110, 110, 0.342);
+    margin-right: 16px;
+    padding-bottom: 9.5px;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.phonesec:hover{
+    color: #0D6EFD;
+}
+
+.phonesec.contacto{
+    border: none;
+}
+
+.navdesktop{
+    background-color: #111418;
+    width: 235px;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nombredesktop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.nombredesktop h2{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.966);
+}
+
+.nombredesktop img{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    border: 10px solid rgb(44, 44, 44); 
+}
+
+.navsecciones{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.navsecciones a{
+    color: rgba(255, 255, 255, 0.966);
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.navsecredesdesktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+.navsecredesdesktop img{
+    width: 18px;
+    height: 18px;
+    filter: brightness(70%); 
+}
+
+.navsecredesdesktop img:hover{
+    filter: brightness(35%); 
+}
+
+.deskgithub{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.navsecredes img:hover{
+    filter: brightness(70%);
+    cursor: pointer; 
+}
+
+.navsecciones a:hover{
+    color: #0D6EFD;
+}
+
+header{
+    margin-left: 235px;
+    height: 645px;
+    display: flex;
+    justify-content: center;
+    background-image: url('../imagenes/fondo5.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el elemento header */
+    background-position: center; /* Centra la imagen */
+}
+
+@media screen and (max-width: 980px){
+    header{
+        background-color: gray;
+        margin: 0;
+    }
+}
+
+.basics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.basics h1{
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.basics h3{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.795);
+    font-size: 25px;
+    text-align: center;
+}
+
+.contactame {
+    text-decoration: none; /* Quitar el subrayado del enlace */
+    display: inline-block; /* Hacer que el enlace se comporte como un bloque */
+    padding: 10px 20px; /* Ajustar el relleno del enlace */
+    border: 2px solid #0D6EFD; /* Agregar un borde sólido de 2px */
+    border-radius: 25px; /* Agregar bordes redondeados */
+    color: #0D6EFD; /* Color del texto */
+    background-color: transparent; /* Relleno transparente */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para cambios de color */
+    font-weight: 500;
+    margin-top: 30px;
+  }
+  
+.contactame:hover {
+    background-color: #0D6EFD; /* Cambiar el color de fondo al pasar el cursor sobre el enlace */
+    color: #fff; /* Cambiar el color del texto al pasar el cursor sobre el enlace */
+}
+
+.abajo{
+    position: absolute;
+    margin-top: 550px;
+}
+.basics img{
+    animation: bounce 0.7s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0); /* En la posición inicial (no se mueve) */
+    }
+    100% {
+        transform: translateY(-10px); /* Mueve la imagen hacia arriba */
+    }
+}
+
+@media screen and (max-width: 980px){
+    .basics h1{
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+.sobremi{
+    color: black;
+    margin-left: 235px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.container {
+    position: relative;
+    text-align: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 95px;
+  }
+  
+  .text {
+    position: relative; /* Permite que el elemento se posicione en relación con el contenedor */
+    z-index: 2; /* Asegura que el elemento se muestre sobre el otro */
+    font-weight: 600;
+  }
+  
+  .aboutme {
+    position: absolute; /* Posicionamiento absoluto para superponer el elemento */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; /* Centra verticalmente */
+    z-index: 1; /* Asegura que el elemento se muestre sobre el otro */
+    font-size: 125px;
+    height: 150px;
+    color: rgba(201, 200, 200, 0.521);
+}
+
+  .text::after {
+    content: ''; /* Crea un elemento de pseudo-elemento */
+    position: absolute;
+    bottom: -5px; /* Distancia del subrayado desde la parte inferior del h2 */
+    left: 50%; /* Comienza desde el centro */
+    width: 80px; /* Longitud del subrayado */
+    height: 3px; /* Grosor del subrayado */
+    background-color: #0D6EFD; /* Color del subrayado */
+    transform: translateX(-50%); /* Centra horizontalmente */
+  }
+  
+.sobremidatos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.quiensoy{
+    width: 60%;
+    margin-left: 50px;
+    padding-right: 50px;
+}
+
+.quiensoy h3{
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+.quiensoy p{
+    color: #4C4D4D;
+    line-height: 30px;
+}
+
+.sebastianstrong{
+    color: #0D6EFD;
+    font-weight: 600;
+}
+
+.datos p{
+    font-size: 16px;
+    color: #4C4D4D;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.342);
+    padding-bottom: 13px;
+    width: 300px;
+}
+
+.datos strong{
+    font-weight: 700;
+    margin-right: 10px;
+    color: #4C4D4D;
+}
+
+.datos{
+    margin-left: 15px;
+}
+
+.datos button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 13px 40px;
+    border: 2px solid #0D6EFD;
+    border-radius: 25px;
+    color: white;
+    background-color: #0D6EFD;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para cambios de color */
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.datos button:hover {
+    background-color: #0a59cf; /* Cambia el color de fondo al pasar el cursor */
+    border: 2px solid #0a59cf;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Agrega transición para el cambio de sombra */
+}
+
+.strongemail{
+    color: #0D6EFD;
+    font-weight: 100;
+}
+
+.pemail{
+    color: #0D6EFD !important;
+}
+
+.datos a{
+    text-decoration: none;
+}
+
+.datos a:hover{
+    color: #0a59cf;
+}
+
+@media screen and (max-width: 980px){
+    .sobremi{
+        margin: 0;
+    }
+    .sobremidatos{
+        flex-direction: column;
+    }
+    .quiensoy{
+        width: 73%;
+        margin-bottom: 80px;
+    }
+    .quiensoy h3{
+        text-align: center;
+    }
+    .quiensoy p{
+        text-align: center;
+    }
+    .datos{
+        width: 73%;
+    }
+
+    .datos p{
+        width: 100%;
+    }
+    .aboutme{
+        font-size: 90px;
+        padding-top: 24px;
+    }
+}
+
+.sobremi.quehago{
+    background-color: #f8f9fa;
+    padding-bottom: 120px;
+}
+
+.graf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Borde sombreado */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: white; /* Relleno transparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.serv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: 50%;
+}
+
+.services{
+    margin-left: 80px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 80px;
+    flex-wrap: wrap;
+    height: 410px;
+}
+
+
+.grafdesc p{
+    margin: 0;
+    color: #4C4D4D;
+}
+
+.titulograf{
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.grafdesc{
+    width: 70%;
+}
+
+@media screen and (max-width: 1115px){
+    .services{
+        height: 480px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .graf{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.dis{
+    background-color: #0D6EFD;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.herramientas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 112px;
+    margin-right: 112px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .divherr {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+  }
+  
+  .herram {
+    flex-basis: calc(33.33%); /* Calcula el ancho de las columnas */
+    margin-bottom: 30px; /* Espacio entre las filas */
+  }
+
+  .herram p {
+    border-bottom: 2px solid #0D6EFD; /* Ancho, estilo y color del subrayado */
+    display: inline; /* Para que el subrayado se ajuste al contenido del párrafo */
+    position: relative; /* Para ajustar la posición del subrayado */
+    
+  }
+  
+  .herram p::after {
+    content: ""; /* Contenido vacío para el seudoelemento */
+    position: absolute; /* Posición absoluta en relación al párrafo */
+    bottom: -2px; /* Desplazamiento hacia abajo para superponer el subrayado */
+    left: 0; /* Alinear a la izquierda */
+    width: 100%; /* Ancho completo */
+    height: 2px; /* Grosor del subrayado */
+    background-color: #0D6EFD; /* Color del subrayado */
+  }
+  
+  @media (max-width: 768px) {
+    .services{
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .serv{
+        width: 80%;
+        margin-bottom: 45px;
+    }
+
+    .herramientas{
+        margin-top: 45px;
+    }
+
+    .herram {
+        flex-basis: calc(50%); /* Calcula el ancho de las columnas */
+        margin-bottom: 30px; /* Espacio entre las filas */
+      }
+    
+    .herram{
+        display: flex;
+        justify-content: center !important;
+    }
+
+  }
+  
+.herramientas h2{
+    font-size: 25px;
+    color: #4C4D4D;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.herram.react{
+    display: flex;
+    justify-content: center;
+}
+.herram.mongo{
+    display: flex;
+    justify-content: center;
+}
+
+.herram.javascript{
+    display: flex;
+    justify-content: end;
+}
+
+.herram.figma{
+    display: flex;
+    justify-content: end;
+}
+
+.trabajos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.trabajos img{
+    margin: 15px;
+    border: 2px solid #4C4D4D;
+    border-radius: 2%;
+    transition: filter 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.trabajos img:hover{
+    cursor: pointer;
+}
+
+.trabajo-item {
+    position: relative; /* Para posicionar el texto dentro del contenedor */
+  }
+
+  .trabajo-texto {
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centrar exactamente */
+    color: white; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    padding: 10px 20px; /* Relleno alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    opacity: 0; /* Ocultar inicialmente */
+    transition: opacity 0.3s ease; /* Transición suave */
+    height: 220px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.trabajo-texto p{
+    text-align: center;
+}
+
+.visitar{
+    text-decoration: none;
+    margin: 10px;
+    background-color: #0a59cf;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.visitar:hover{
+    color: #ffffff;
+    background-color: #053d91;
+}
+
+.vercodigo{
+    text-decoration: none;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 2px solid #0a59cf;
+    border-radius: 5px;
+    color: #0a59cf;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.vercodigo:hover{
+    background-color: #cecbcb;
+}
+
+  .trabajo-item:hover .trabajo-texto {
+  opacity: 1; /* Mostrar el texto cuando se pasa el cursor */
+}
+
+.trabajo-enlaces{
+    margin-top: 5px;
+}
+
+.trabajo-titulo{
+    font-weight: 700;
+}
+
+
+.contacto-seccion{
+    width: 70%;
+    margin: auto;
+}
+
+.contacto-seccion h2{
+    margin: 5px;
+    font-size: 25px;
+}
+
+.contacto-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.nombre-email{
+    display: flex;
+    flex-direction: row;
+}
+
+.nombre-email .formsec{
+    width: 50%;
+}
+
+.nombre-email .contacto-input{
+    width:97.5%;
+    border: 2px solid #989b9b;
+    border-radius: 5px;
+}
+
+.contacto-input{
+    margin: 5px;
+    height: 45px;
+    padding: 5px;
+}
+
+.formsec.secmensaje{
+    width: 100%;
+}
+
+.contacto-input.inputmensaje{
+    width: 98.78%;
+    border: 2px solid #989b9b;
+    border-radius: 5px;
+    height: 140px;
+}
+
+.inputmensaje {
+    padding-top: 0; /* Ajusta el padding superior según sea necesario */
+    padding-bottom: 96px; /* Asegúrate de que el padding inferior no agregue espacio adicional */
+    line-height: 1.5; /* Ajusta la altura de la línea del texto */
+    padding-left: 5px;
+}
+
+.enviar-contacto{
+    width: 100px;
+    height: 50px;
+    align-self: center;
+    border: 2px solid #0D6EFD;
+    border-radius: 25px;
+    color: #ffffff;
+    background-color: #0D6EFD;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para cambios de color */
+    margin-top: 20px;
+}
+
+.enviar-contacto:hover {
+    background-color: #0a59cf; /* Cambia el color de fondo al pasar el cursor */
+    border: 2px solid #0a59cf;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Agrega transición para el cambio de sombra */
+}
+
+.sobremi.footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.sobremi.footer p{
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .sobremi .container h3{
+        font-size: 80px;
+    }
+    .sobremi .container h2{
+        font-size: 25px;
+    }
+    .sobremi .container{
+        padding-bottom: 2px;
+    }
+}
+
+.objetivoay{
+    color: #4C4D4D;
+    line-height: 30px;
+    width: 60%;
+    margin: auto;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.tecnico{
+    color: #0a59cf !important;
+    margin: 0 !important;
+}
