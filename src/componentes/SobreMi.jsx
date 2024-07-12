@@ -1,4 +1,5 @@
 import React from 'react'
+import pdf from "../imagenes/Cv_Cioffi.pdf"
 
 const SobreMi = () => {
   return (
@@ -18,7 +19,9 @@ const SobreMi = () => {
         <p className='pemail'><strong>Email:</strong> <a href="mailto:sebacioffi12@gmail.com" target="_blank" rel="noopener noreferrer">sebacioffi12@gmail.com</a></p>
         <p><strong>Edad:</strong> 21</p>
         <p><strong>Soy de:</strong> Buenos Aires, Argentina</p>
-        <button>Descargar CV</button>
+        <a a href={pdf} target="_blank" rel="noopener noreferrer" download="cv-cioffi">
+  <button>Descargar CV</button>
+</a>
       </div>
       </div>
     </section>
