@@ -11,6 +11,17 @@ const Portfolio = () => {
         <h3 className='aboutme'>PORTFOLIO</h3>
       </div>
       <div className='trabajos'>
+      <div className='trabajo-item'>
+          <img src={movietracker} alt="" width={"400px"} height={"220px"} />
+          <div className='trabajo-texto'>
+            <p className='trabajo-titulo'>Movie Tracker</p>
+            <p>Te recomendamos películas en base a tus gustos y plataformas de preferencia</p>
+            <div className='trabajo-enlaces'>
+              <a className='visitar' href="https://movie-tracker-kappa.vercel.app/" target='_blank' rel='noreferrer'>Visitar web</a>
+              <a className='vercodigo' href="https://github.com/sebascioffi/sipi_front/tree/main/SIPI" target='_blank' rel='noreferrer'>Ver código</a>
+            </div>
+          </div>
+        </div>
         <div className='trabajo-item'>
           <img src={urlshortener} alt="" width={"400px"} height={"220px"} />
           <div className='trabajo-texto'>
@@ -30,17 +41,6 @@ const Portfolio = () => {
             <div className='trabajo-enlaces'>
               <a className='visitar' href="https://cineforum.vercel.app/" target='_blank' rel='noreferrer'>Visitar web</a>
               <a className='vercodigo' href="https://github.com/sebascioffi/cineforum" target='_blank' rel='noreferrer'>Ver código</a>
-            </div>
-          </div>
-        </div>
-        <div className='trabajo-item'>
-          <img src={movietracker} alt="" width={"400px"} height={"220px"} />
-          <div className='trabajo-texto'>
-            <p className='trabajo-titulo'>Movie Tracker</p>
-            <p>Página de películas mas sofisticada, con recomendaciones personalizadas de usuario</p>
-            <div className='trabajo-enlaces'>
-              <a className='visitar' href="https://movie-tracker-kappa.vercel.app/" target='_blank' rel='noreferrer'>Visitar web</a>
-              <a className='vercodigo' href="https://github.com/sebascioffi/sipi_front/tree/main/SIPI" target='_blank' rel='noreferrer'>Ver código</a>
             </div>
           </div>
         </div>
