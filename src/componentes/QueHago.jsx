@@ -8,7 +8,7 @@ const QueHago = () => {
     <section className="sobremi quehago" id="quehago">
       <div className="container">
         <h2 className="text">Mis habilidades</h2>
-        <h3 className='aboutme'>QUE HAGO</h3>
+        <h3 className='aboutme quehagosecciona'>QUE HAGO</h3>
       </div>
       <div className="services">
         <div className="serv">

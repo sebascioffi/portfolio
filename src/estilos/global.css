@@ -221,6 +221,7 @@ header{
 .abajo{
     position: absolute;
     margin-top: 550px;
+    display: none;
 }
 .basics img{
     animation: bounce 0.7s infinite alternate;
@@ -758,4 +759,44 @@ header{
 .tecnico{
     color: #0a59cf !important;
     margin: 0 !important;
+}
+
+@media screen and (max-width: 500px){
+    .navphone .nombre h2{
+        font-size: 20px;
+    }
+
+    header .basics h1{
+        width: 70%;
+    }
+}
+
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow-x: hidden !important; /* Prevenir el desbordamiento horizontal */
+  }
+  
+
+  .divav {
+    width: 100% !important;
+  }
+  
+
+  @media screen and (max-width: 411px){
+    .navphone .nombre h2{
+        display: none;
+    }
+
+    header .basics h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 424px){
+    .aboutme.quehagosecciona{
+        font-size: 70px !important;
+    }
 }
