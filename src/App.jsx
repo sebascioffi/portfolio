@@ -26,15 +26,15 @@ const App = () => {
 
   return (
     <>
-    {windowWidth <= 980 ? <NavbarPhone /> : <NavbarDesktop />}
-    <div className="divav">
-    <Home />
-    <SobreMi />
-    <QueHago />
-    <Portfolio />
-    <Contacto />
-    <Footer />
-    </div>
+      {windowWidth <= 980 ? <NavbarPhone /> : <NavbarDesktop />}
+      <div className="divav">
+        <Home />
+        <SobreMi />
+        <QueHago />
+        <Portfolio />
+        <Contacto />
+        <Footer />
+      </div>
     </>
   )
 }

@@ -1,28 +1,29 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contacto = () => {
 
   const form = useRef();
+  const [showNotification, setShowNotification] = useState(false);
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  emailjs
-  .sendForm('service_8mwnfie', 'template_9hggeag', form.current, {
-    publicKey: 'vWGm5vPFUPitIQrwS',
-  })
-  .then(
-    () => {
-      console.log('SUCCESS!');
-      alert("El email se envió correctamente")
-      form.current.reset();
-    },
-    (error) => {
-      console.log('FAILED...', error.text);
-      alert("Hubo un error al enviar el email")
-    },
-  );
-};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm('service_8mwnfie', 'template_9hggeag', form.current, {
+        publicKey: 'vWGm5vPFUPitIQrwS',
+      })
+      .then(
+        () => {
+          form.current.reset();
+          setShowNotification(true);
+          setTimeout(() => setShowNotification(false), 4000);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          alert("Hubo un error al enviar el email")
+        },
+      );
+  };
 
 
   return (
@@ -35,33 +36,40 @@ const handleSubmit = (e) => {
         <h2>Envíame un email</h2>
         <form ref={form} className="contacto-form" onSubmit={handleSubmit}>
           <div className='nombre-email'>
-          <div className="formsec">
-              <input className="contacto-input" 
-              required
-              type="text" 
-              placeholder="Nombre" 
-              name="user_name"
+            <div className="formsec">
+              <input className="contacto-input"
+                required
+                type="text"
+                placeholder="Nombre"
+                name="user_name"
               />
-        </div>
-        <div className="formsec">
-            <input className="contacto-input" 
-            required
-            type="text"
-            placeholder="Email"
-            name="user_email"
-            />
-        </div>
-        </div>
-        <div className="formsec secmensaje">
+            </div>
+            <div className="formsec">
+              <input className="contacto-input"
+                required
+                type="text"
+                placeholder="Email"
+                name="user_email"
+              />
+            </div>
+          </div>
+          <div className="formsec secmensaje">
             <input className="contacto-input inputmensaje"
-            required
-            type="text"
-            placeholder="Mensaje"
-            name="message"
+              required
+              type="text"
+              placeholder="Mensaje"
+              name="message"
             />
-        </div>
-        <button className='enviar-contacto'>Enviar</button>
+          </div>
+          <button className='enviar-contacto'>Enviar</button>
         </form>
+        {/* Notificación de éxito */}
+        {showNotification && (
+          <div className="notification">
+            <p>Email enviado correctamente</p>
+            <button onClick={() => setShowNotification(false)}>X</button>
+          </div>
+        )}
       </div>
     </section>
   )
